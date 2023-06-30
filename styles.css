@@ -113,7 +113,8 @@
         margin-left: 20px;
     }
     .about-container{
-        width: 80%;
+        width: 85%;
+        margin-left: 15px;
     }
 }
 .about-page
