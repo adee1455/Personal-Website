@@ -112,6 +112,9 @@
     .jumbo{
         margin-left: 20px;
     }
+    .about-container{
+        width: 80%;
+    }
 }
 .about-page
 {
