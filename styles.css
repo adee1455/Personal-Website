@@ -116,6 +116,10 @@
         width: 90%;
         margin-left: 0px;
     }
+    .about{
+        display: flex;
+        justify-content: center;
+    }
 }
 .about-page
 {
