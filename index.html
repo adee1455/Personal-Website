@@ -23,7 +23,7 @@
     });
   function sendMail() {
 const userInput = document.getElementById('userInput').value;
-const subject = encodeURIComponent('Hello Adee'); // You can change the subject if needed
+const subject = encodeURIComponent('Hello Adee'); 
 const body = encodeURIComponent(userInput);
 const mailtoLink = `mailto:shaikhadee1455@gmail.com?subject=${subject}&body=${body}`;
 
@@ -35,8 +35,8 @@ window.location.href = mailtoLink;
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-secondary">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg " id="navjs">
+        <div class="container-fluid" id="navText">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -44,16 +44,16 @@ window.location.href = mailtoLink;
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav me-auto mb-2 ms-5 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link nav-opt active" aria-current="page" href="#">Home</a>
+                <a class="nav-link nav-opt active navText"  aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item ms-4">
-                <a class="nav-link nav-opt nav-hover" href="about.html" >About</a>
+                <a class="nav-link nav-opt nav-hover navText"  href="about.html" >About</a>
               </li>
               <li class="nav-item ms-4">
-                <a href="about.html"  class="nav-link nav-opt nav-hover ">Blog</a>
+                <a href="about.html"  class="nav-link nav-opt nav-hover  navblog" >Blog</a>
               </li>
               <li class="nav-item ms-4">
-                <a href="about.html" class="nav-link nav-opt nav-hover">Contact Us</a>
+                <a href="about.html" class="nav-link nav-opt nav-hover  navus" >Contact Us</a>
               </li>
             </ul>
           </div>
@@ -62,8 +62,12 @@ window.location.href = mailtoLink;
 
       <!-- Hero Section -->
 
-      <div class="jumbotron d-flex jumbotron-fluid bg-light">
+      <div class="jumbotron d-flex jumbotron-fluid ">
+        <div class="darkSec">
+          <i  id="darkBtn" class="fa-solid fa-moon moon"></i>
+        </div>
         <div class="container jumbo ">
+      
            <h4 class="hello"><i>Hey,</i></h4>
           <div class="icon-main"> 
            <h1 class="display-1">I'M Adee</h1>
@@ -75,13 +79,13 @@ window.location.href = mailtoLink;
       </div>
 
       <!-- About Section -->
-      <section class="about">
+      <section id="about">
       <div class="about-container"> 
       <div class="media mt-3 ">
          <img src="images/adee.jpeg" class="rounded float-start " alt="..." style="width: 40%; margin-right: 17.3px;">
          <div class="media-body ">
-          <h5 class="lead">About Me</h5>
-          <p>I am a student pursuing BS in Computer Science. With a passion for technology and marketing, I have obtained the LinkedIn Certified Marketing Insider certification. Currently, I am focused on learning web development and exploring the exciting field of blockchain development. As a budding entrepreneur, I strive to combine my technical skills with innovative ideas. I truly enjoy coding and consider myself a tech enthusiast. Moreover, I am a firm believer in the power of Web3 and the potential it holds for shaping the future of the internet.</p>
+          <h5 class="lead aboutme">About Me</h5>
+          <p class="mypara">I am a student pursuing BS in Computer Science. With a passion for technology and marketing, I have obtained the LinkedIn Certified Marketing Insider certification. Currently, I am focused on learning web development and exploring the exciting field of blockchain development. As a budding entrepreneur, I strive to combine my technical skills with innovative ideas. I truly enjoy coding and consider myself a tech enthusiast. Moreover, I am a firm believer in the power of Web3 and the potential it holds for shaping the future of the internet.</p>
         </div>
         <div class="message-container">
           <input type="text" id="userInput" class="message-input" placeholder="Send a Message to Adee Now! .......">
@@ -97,12 +101,12 @@ window.location.href = mailtoLink;
 <div class="projects">
 
     <div class="container">
-        <p class="font-monospace d-flex justify-content-center mt-4 fw-bold fs-4 lead">My Projects</p>
+        <p class="font-monospace d-flex justify-content-center mt-4 fw-bold fs-4 lead projt">My Projects</p>
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
             <div class="card h-100 p-2 bg-light">
               <img src="images/p1.jpg" class="card-img-top" alt="...">
-              <div class="card-body" style="text-align: center;">
+              <div class="card-body"  style="text-align: center;">
                 <h5 class="card-title text">Felix Diesels</h5>
                 <p class="card-text text">This is a Website made for a reputed business that sells diesel injectors of multiple brands to a large number of users.</p>
               </div>
@@ -140,14 +144,14 @@ window.location.href = mailtoLink;
 </section>
 <section>
     <div class="container " style="margin-top: 80px;">
-        <p class="font-monospace d-flex justify-content-center mt-4 fw-bold fs-4 lead">Technologies I Work With</p>
+        <p class="font-monospace d-flex justify-content-center mt-4 fw-bold fs-4 lead techt">Technologies I Work With</p>
         <div class="row row-cols-2 row-cols-md-4 g-4">
 
-            <div class="col">
+            <div class="col" id="langcard">
             <div class="card h-70 p-2 " style="border-radius: none; border: none;">
              
                 <i class="fa-brands fa-html5 d-flex justify-content-center mt-5" style="color: #ff5500; font-size: 7rem;"></i>
-              <div class="card-body" style="text-align: center;">
+              <div class="card-body"  style="text-align: center;">
                 <h1 class="card-title text lead fs-5">HTML5</h1>
               </div>
               </div>
@@ -159,7 +163,7 @@ window.location.href = mailtoLink;
              
                 <i class="fa-brands fa-css3-alt d-flex justify-content-center mt-5" style="color: #0083ff; font-size: 7rem;"></i>
 
-             <div class="card-body" style="text-align: center;">
+             <div class="card-body"  style="text-align: center;">
                 <h4 class="card-title text lead fs-5">CSS3</h4>
               </div>
               </div>
@@ -169,7 +173,7 @@ window.location.href = mailtoLink;
                 <div class="card h-70 p-2 " style="border-radius: none; border: none;">
                  
                     <i class="fa-brands fa-bootstrap d-flex justify-content-center mt-5" style="color: #6528e0; font-size: 7rem;"></i>
-                    <div class="card-body" style="text-align: center;">
+                    <div class="card-body"  style="text-align: center;">
                     <h4 class="card-title text lead fs-5">BOOTSTRAP</h4>
                   </div>
                   </div>
@@ -178,7 +182,7 @@ window.location.href = mailtoLink;
                     <div class="card h-70 p-2 " style="border-radius: none; border: none;">
                      
                         <i class="fa-brands fa-js d-flex justify-content-center mt-5" style="color: #f5de00; font-size: 7rem;"></i>
-                        <div class="card-body" style="text-align: center;">
+                        <div class="card-body"  style="text-align: center;">
                         <h4 class="card-title text lead fs-5">JAVASCRIPT</h4>
                       </div>
                       </div>
@@ -186,18 +190,18 @@ window.location.href = mailtoLink;
     </div>
 </section>
 
-<div class="footer mt-5 bg-light">
+<div class="footer mt-5" id="footjs">
   <div class="container ">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top ">
       <div class="col-md-4 d-flex align-items-center">
         <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
           <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
         </a>
-        <span class="text-muted">&copy; Adee Shaikh</span>
+        <span id="footid" class="">&copy; Adee Shaikh</span>
       </div>
       
       <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="ms-3"><a class="text-muted" href="https://github.com/adee1455" target="_blank"><i class="fa-brands fa-github" style="color: #000000; font-size: 2rem; margin-left: 4px;"></i></a></li>
+        <li class="ms-3"><a class="text-muted" href="https://github.com/adee1455" target="_blank"><i id="github" class="fa-brands fa-github" style="color: #000000; font-size: 2rem; margin-left: 4px;"></i></a></li>
         <li class="ms-3"><a class="text-muted" href="https://twitter.com/shaikhadee1455" target="_blank"><i class="fa-brands fa-twitter" style="color: #3a88fe; font-size: 2rem; margin-left: 4px;"></i></a></li>
         <li class="ms-3"><a class="text-muted" href="https://www.linkedin.com/in/adeeshaikh" target="_blank"><i class="fa-brands fa-linkedin" style="color: #0A66C2;font-size: 2rem; margin-left: 4px;"></i></a></li>
         <li class="ms-3"><a class="text-muted" href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube" style="color: #ff2600;font-size: 2rem; margin-left: 4px;"></i></a></li>
@@ -206,7 +210,65 @@ window.location.href = mailtoLink;
     </footer>
   </div>
 </div>
+    <script>
+document.querySelector("#darkBtn").addEventListener("click", function toggleMode() {
+  // Get the body element
+  const body = document.querySelector("body");
 
+  // Toggle dark mode class
+  body.classList.toggle("dark-mode");
+
+  // Toggle styles based on dark mode class
+  if (body.classList.contains("dark-mode")) {
+    // Dark mode styles
+    body.style.backgroundColor = "black";
+    document.getElementById("about").style.backgroundColor = "black";
+    document.getElementById("navjs").style.backgroundColor = "black";
+    document.getElementById("footjs").style.backgroundColor = "black";
+    document.getElementById("langcard").style.backgroundColor = "black";
+
+    document.querySelector(".lead").style.color = "white";
+    document.querySelector(".hello").style.color = "white";
+    document.querySelector(".display-1").style.color = "white";
+    document.querySelector(".myname").style.color = "white";
+    document.querySelector(".nav-opt").style.color = "white";
+    document.querySelector(".nav-hover").style.color = "white";
+    document.querySelector(".navblog").style.color = "white";
+    document.querySelector(".navus").style.color = "white";
+    document.querySelector(".aboutme").style.color = "white";
+    document.querySelector(".mypara").style.color = "white";
+    document.querySelector(".projt").style.color = "white";
+    document.querySelector(".techt").style.color = "white";
+    document.getElementById("footid").style.color = "white";
+    document.getElementById("github").style.color = "white";
+    document.getElementById("darkBtn").style.color = "white";
+  } else {
+    // Default styles (Light mode)
+    body.style.backgroundColor = "";
+    document.getElementById("about").style.backgroundColor = "";
+    document.getElementById("navjs").style.backgroundColor = "";
+    document.getElementById("footjs").style.backgroundColor = "";
+    document.getElementById("langcard").style.backgroundColor = "";
+
+    document.querySelector(".lead").style.color = "";
+    document.querySelector(".hello").style.color = "";
+    document.querySelector(".display-1").style.color = "";
+    document.querySelector(".myname").style.color = "";
+    document.querySelector(".nav-opt").style.color = "";
+    document.querySelector(".nav-hover").style.color = "";
+    document.querySelector(".navblog").style.color = "";
+    document.querySelector(".navus").style.color = "";
+    document.querySelector(".aboutme").style.color = "";
+    document.querySelector(".mypara").style.color = "";
+    document.querySelector(".projt").style.color = "";
+    document.querySelector(".techt").style.color = "";
+    document.getElementById("footid").style.color = "";
+    document.getElementById("github").style.color = "";
+    document.getElementById("darkBtn").style.color = "";
+  }
+});
+
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>
 </html>
