@@ -23,6 +23,7 @@
 .nav-hover:hover{
     text-decoration: underline;
 }
+
 #about{
      background-color: #f8f9fa;
    
@@ -53,20 +54,20 @@
 
     font-size: 2.5rem;
     font-family: 'Playfair Display', serif;
-    color: #403e3e;
+    color: #4d4d4d;
 }
 .btn-md
 {
-    background-color: #403e3e;
+    background-color: #404040;
     border: none;
 }
-/* .media
-{
-    display: flex;
-   justify-content: center;
-    width: 70%;
+.btn-md:hover{
+    background-color: rgb(236, 236, 236);
+    color: black;
+    border: 1px solid black;
     
-} */
+}
+
 .about-container {
     display: flex;
     justify-content: center;
@@ -121,15 +122,17 @@
     .about-container{
         width: 90%;
         margin-left: 0px;
+
     }
-    .about{
+    #about{
         display: flex;
         justify-content: center;
+        
     }
-    /* #darkBtn
-    {
-        margin-left: ;
-    } */
+    #darkBtn {
+        top: 80px;
+        right: 15px;
+      }
 }
 .about-page
 {
@@ -180,15 +183,27 @@
 
   #darkBtn {
     font-size: 1.5rem;
-    position: fixed;
+    position: absolute;
     top: 100px;
     right: 20px;
   }
-  
-  @media (max-width: 768px) {
-    #darkBtn {
-      top: 80px;
-      right: 15px;
-    }
+  #menubtn{
+    color: #232323;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
   }
-  
+#codeBtn {
+
+    color: #444444;
+    margin-left: 9px;
+}
+.default-styles {
+    background-color: rgb(236, 236, 236);
+    color: black;
+    /* Add other default styles as needed */
+  }
+#element{
+   
+   text-emphasis: bold;
+}  

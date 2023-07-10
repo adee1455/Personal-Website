@@ -38,22 +38,22 @@ window.location.href = mailtoLink;
     <nav class="navbar navbar-expand-lg " id="navjs">
         <div class="container-fluid" id="navText">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span  id="menubtn"><i class="fa-regular fa-bars"></i></span>
           </button>
           <a class="navbar-brand myname fs-2 ms-3" href="#">Adee Shaikh</a>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav me-auto mb-2 ms-5 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link nav-opt active navText"  aria-current="page" href="#">Home</a>
+                <a class="nav-link nav-opt active nav-hello navText"  aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item ms-4">
-                <a class="nav-link nav-opt nav-hover navText"  href="about.html" >About</a>
+                <a class="nav-link nav-opt nav-hover navText"  href="#about" >About</a>
               </li>
               <li class="nav-item ms-4">
                 <a href="about.html"  class="nav-link nav-opt nav-hover  navblog" >Blog</a>
               </li>
               <li class="nav-item ms-4">
-                <a href="about.html" class="nav-link nav-opt nav-hover  navus" >Contact Us</a>
+                <a href="#footjs" class="nav-link nav-opt nav-hover  navus" >Contact Us</a>
               </li>
             </ul>
           </div>
@@ -73,7 +73,7 @@ window.location.href = mailtoLink;
            <h1 class="display-1">I'M Adee</h1>
          
         </div>
-          <p class="lead free"> A Web Developer.<i class="fa-sharp fa-solid fa-code fa-fade" style="color: #444444;"></i> <a href="mailto:shaikhadee1455@gmail.com"><br> <button type="button" class="btn btn-secondary btn-md " >Contact Me</button></a><a href="https://drive.google.com/file/d/1o1kjNkfMQfzBbbA2aws-D0LjY5-Ko-eR/view?usp=sharing" target="_blank"><button type="button" class="btn btn-secondary btn-md ms-5 " >View CV</button></a></p>
+          <p class="lead free"> <span id="element"></span> <i class="fa-sharp fa-solid fa-code fa-fade" id="codeBtn"></i> <a href="https://github.com/adee1455" target="_blank"><br> <button type="button" class="btn btn-secondary btn-md " id="btnhero" >Visit Github</button></a><a href="https://drive.google.com/file/d/1o1kjNkfMQfzBbbA2aws-D0LjY5-Ko-eR/view?usp=sharing" target="_blank"><button type="button" class="btn btn-secondary btn-md ms-5 " id="btnhero2" >View CV</button></a></p>
           
         </div>
       </div>
@@ -82,7 +82,7 @@ window.location.href = mailtoLink;
       <section id="about">
       <div class="about-container"> 
       <div class="media mt-3 ">
-         <img src="images/adee.jpeg" class="rounded float-start " alt="..." style="width: 40%; margin-right: 17.3px;">
+         <img src="images/adeeNew.jpeg" class="rounded float-start " alt="..." style="width: 40%; margin-right: 17.3px;">
          <div class="media-body ">
           <h5 class="lead aboutme">About Me</h5>
           <p class="mypara">I am a student pursuing BS in Computer Science. With a passion for technology and marketing, I have obtained the LinkedIn Certified Marketing Insider certification. Currently, I am focused on learning web development and exploring the exciting field of blockchain development. As a budding entrepreneur, I strive to combine my technical skills with innovative ideas. I truly enjoy coding and consider myself a tech enthusiast. Moreover, I am a firm believer in the power of Web3 and the potential it holds for shaping the future of the internet.</p>
@@ -103,39 +103,39 @@ window.location.href = mailtoLink;
     <div class="container">
         <p class="font-monospace d-flex justify-content-center mt-4 fw-bold fs-4 lead projt">My Projects</p>
         <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-            <div class="card h-100 p-2 bg-light">
+            <div class="col" >
+            <div class="card h-100 p-2 " id="felixDark">
               <img src="images/p1.jpg" class="card-img-top" alt="...">
               <div class="card-body"  style="text-align: center;">
                 <h5 class="card-title text">Felix Diesels</h5>
                 <p class="card-text text">This is a Website made for a reputed business that sells diesel injectors of multiple brands to a large number of users.</p>
               </div>
               <div style="display: flex; justify-content: center; padding-bottom: 8.3px; " >
-                <a class="btn btn-dark CV2  btn-lg" style="width:50%;" href="http://felixdiesels.in/" target="_blank" role="button">  View  </a>
+                <a class="btn btn-dark CV2  btn-lg" id="fxbtn" style="width:50%;" href="http://felixdiesels.in/" target="_blank" role="button">  View  </a>
               </div>
               </div>
             </div>
-            <div class="col">
-            <div class="card h-100 p-2 bg-light mb-5">
+            <div class="col" >
+            <div class="card h-100 p-2  mb-5" id="amazonDark">
               <img src="images/amazon-logo.png" class="card-img-top" alt="..." >
               <div class="card-body" style="text-align: center;">
                 <h5 class="card-title text">Amazon.com Clone</h5>
                 <p class="card-text text">As any other fresher into development i too made a clone.So have a look at my almost similar looking amazon.com clone.</p>
               </div>
               <div style="display: flex; justify-content: center; padding-bottom: 8.3px;">
-                <a class="btn btn-dark CV2  btn-lg" style="width:50%;" href="https://github.com/adee1455/Amazon.com-Clone" target="_blank" role="button">  View  </a>
+                <a class="btn btn-dark CV2  btn-lg" id="ambtn" style="width:50%;" href="https://github.com/adee1455/Amazon.com-Clone" target="_blank" role="button">  View  </a>
               </div> 
             </div>
             </div>
-            <div class="col">
-            <div class="card h-100 p-2 bg-light">
+            <div class="col" >
+            <div class="card h-100 p-2 " id="appleDark" >
               <img src="images/apple-logo.png" class="card-img-top" alt="..." >
               <div class="card-body" style="text-align: center;">
                 <h5 class="card-title text">Apple.com Clone</h5>
                 <p class="card-text text"> An ambitious Apple-inspired clone website project, showcasing my web development skills and passion for creating innovative digital experiences.</p>
               </div>
               <div style="display: flex; justify-content: center; padding-bottom: 8.3px;" >
-                <a class="btn btn-dark CV2  btn-lg" style="width:50%;" href="https://github.com/adee1455/Apple.com-Clone" target="_blank" role="button">  View  </a>
+                <a class="btn btn-dark CV2  btn-lg" id="apbtn" style="width:50%;" href="https://github.com/adee1455/Apple.com-Clone" target="_blank" role="button">  View  </a>
               </div>
             </div>
             </div>
@@ -147,43 +147,43 @@ window.location.href = mailtoLink;
         <p class="font-monospace d-flex justify-content-center mt-4 fw-bold fs-4 lead techt">Technologies I Work With</p>
         <div class="row row-cols-2 row-cols-md-4 g-4">
 
-            <div class="col" id="langcard">
-            <div class="card h-70 p-2 " style="border-radius: none; border: none;">
+            <div class="col" >
+            <div class="card h-70 p-2 " id="langcard" style="border-radius: none; border: none;">
              
                 <i class="fa-brands fa-html5 d-flex justify-content-center mt-5" style="color: #ff5500; font-size: 7rem;"></i>
               <div class="card-body"  style="text-align: center;">
-                <h1 class="card-title text lead fs-5">HTML5</h1>
+                <h1 class="card-title text lead fs-5" id="ht">HTML5</h1>
               </div>
               </div>
             </div>
 
 
                 <div class="col">
-            <div class="card h-70 p-2 " style="border-radius: none; border: none;">
+            <div class="card h-70 p-2 " id="cssDark" style="border-radius: none; border: none;">
              
                 <i class="fa-brands fa-css3-alt d-flex justify-content-center mt-5" style="color: #0083ff; font-size: 7rem;"></i>
 
              <div class="card-body"  style="text-align: center;">
-                <h4 class="card-title text lead fs-5">CSS3</h4>
+                <h4 class="card-title text lead fs-5" id="cs">CSS3</h4>
               </div>
               </div>
             </div>
 
             <div class="col">
-                <div class="card h-70 p-2 " style="border-radius: none; border: none;">
+                <div class="card h-70 p-2 " id="bootDark" style="border-radius: none; border: none;">
                  
                     <i class="fa-brands fa-bootstrap d-flex justify-content-center mt-5" style="color: #6528e0; font-size: 7rem;"></i>
                     <div class="card-body"  style="text-align: center;">
-                    <h4 class="card-title text lead fs-5">BOOTSTRAP</h4>
+                    <h4 class="card-title text lead fs-5" id="bt">BOOTSTRAP</h4>
                   </div>
                   </div>
                 </div>
                 <div class="col">
-                    <div class="card h-70 p-2 " style="border-radius: none; border: none;">
+                    <div class="card h-70 p-2 " id="jsDark" style="border-radius: none; border: none;">
                      
                         <i class="fa-brands fa-js d-flex justify-content-center mt-5" style="color: #f5de00; font-size: 7rem;"></i>
                         <div class="card-body"  style="text-align: center;">
-                        <h4 class="card-title text lead fs-5">JAVASCRIPT</h4>
+                        <h4 class="card-title text lead fs-5" id="js">JAVASCRIPT</h4>
                       </div>
                       </div>
                     </div>
@@ -226,9 +226,20 @@ document.querySelector("#darkBtn").addEventListener("click", function toggleMode
     document.getElementById("navjs").style.backgroundColor = "black";
     document.getElementById("footjs").style.backgroundColor = "black";
     document.getElementById("langcard").style.backgroundColor = "black";
+    document.getElementById("btnhero").style.backgroundColor = "white";
+    document.getElementById("btnhero2").style.backgroundColor = "white";
+    document.getElementById("felixDark").style.backgroundColor = "#1f1f1f";
+    document.getElementById("amazonDark").style.backgroundColor = "#1f1f1f";
+    document.getElementById("appleDark").style.backgroundColor = "#1f1f1f";
+    document.getElementById("fxbtn").style.backgroundColor = "white";
+    document.getElementById("ambtn").style.backgroundColor = "white";
+    document.getElementById("apbtn").style.backgroundColor = "white";
+    document.getElementById("cssDark").style.backgroundColor = "black";
+    document.getElementById("bootDark").style.backgroundColor = "black";
+    document.getElementById("jsDark").style.backgroundColor = "black";
 
     document.querySelector(".lead").style.color = "white";
-    document.querySelector(".hello").style.color = "white";
+    document.querySelector(".hello").style.color = "lightGray";
     document.querySelector(".display-1").style.color = "white";
     document.querySelector(".myname").style.color = "white";
     document.querySelector(".nav-opt").style.color = "white";
@@ -242,6 +253,25 @@ document.querySelector("#darkBtn").addEventListener("click", function toggleMode
     document.getElementById("footid").style.color = "white";
     document.getElementById("github").style.color = "white";
     document.getElementById("darkBtn").style.color = "white";
+    document.getElementById("menubtn").style.color = "white";
+    document.getElementById("codeBtn").style.color = "white";
+    document.getElementById("btnhero").style.color = "black";
+    document.getElementById("btnhero2").style.color = "black";
+    document.getElementById("element").style.color = "lightGray";
+    document.getElementById("felixDark").style.color = "white";
+    document.getElementById("amazonDark").style.color = "white";
+    document.getElementById("appleDark").style.color = "white";
+    document.getElementById("fxbtn").style.color = "black";
+    document.getElementById("ambtn").style.color = "black";
+    document.getElementById("apbtn").style.color = "black";
+    document.getElementById("ht").style.color = "white";
+    document.getElementById("cs").style.color = "white";
+    document.getElementById("bt").style.color = "white";
+    document.getElementById("js").style.color = "white";
+
+
+
+
   } else {
     // Default styles (Light mode)
     body.style.backgroundColor = "";
@@ -249,6 +279,15 @@ document.querySelector("#darkBtn").addEventListener("click", function toggleMode
     document.getElementById("navjs").style.backgroundColor = "";
     document.getElementById("footjs").style.backgroundColor = "";
     document.getElementById("langcard").style.backgroundColor = "";
+    document.getElementById("felixDark").style.backgroundColor = "";
+    document.getElementById("amazonDark").style.backgroundColor = "";
+    document.getElementById("appleDark").style.backgroundColor = "";
+    document.getElementById("fxbtn").style.backgroundColor = "";
+    document.getElementById("ambtn").style.backgroundColor = "";
+    document.getElementById("apbtn").style.backgroundColor = "";
+    document.getElementById("cssDark").style.backgroundColor = "";
+    document.getElementById("bootDark").style.backgroundColor = "";
+    document.getElementById("jsDark").style.backgroundColor = "";
 
     document.querySelector(".lead").style.color = "";
     document.querySelector(".hello").style.color = "";
@@ -265,10 +304,144 @@ document.querySelector("#darkBtn").addEventListener("click", function toggleMode
     document.getElementById("footid").style.color = "";
     document.getElementById("github").style.color = "";
     document.getElementById("darkBtn").style.color = "";
+    document.getElementById("menubtn").style.color = "";
+    document.getElementById("codeBtn").style.color = "";
+    document.getElementById("btnhero").style.backgroundColor = "";
+    document.getElementById("btnhero").style.color = "";
+    document.getElementById("btnhero2").style.backgroundColor = "";
+    document.getElementById("btnhero2").style.color = "";
+    document.getElementById("element").style.color = "";
+    document.getElementById("felixDark").style.color = "";
+    document.getElementById("amazonDark").style.color = "";
+    document.getElementById("appleDark").style.color = "";
+    document.getElementById("fxbtn").style.color = "";
+    document.getElementById("ambtn").style.color = "";
+    document.getElementById("apbtn").style.color = "";
+    document.getElementById("ht").style.color = "";
+    document.getElementById("cs").style.color = "";
+    document.getElementById("bt").style.color = "";
+    document.getElementById("js").style.color = "";
+
+
   }
 });
+// Get the button element
+const button = document.getElementById("btnhero");
 
+// Add an event listener to the button
+button.addEventListener('mouseenter', handleMouseEnter);
+button.addEventListener('mouseleave', handleMouseLeave);
+
+// Function to handle mouseenter event
+function handleMouseEnter() {
+  // Check if dark mode is active
+  const body = document.body;
+  const isDarkMode = body.classList.contains("dark-mode");
+
+  if (isDarkMode) {
+    // Apply dark mode hover styles
+    button.style.backgroundColor = '#404040';
+    button.style.color = 'white';
+
+  } else {
+    // Apply default hover styles
+    button.style.backgroundColor =  "rgb(236, 236, 236)";
+    button.style.color = 'black';
+  }
+}
+
+// Function to handle mouseleave event
+function handleMouseLeave() {
+  // Reset the button styles
+  const body = document.body;
+  const isDarkMode = body.classList.contains("dark-mode");
+
+  if (isDarkMode) {
+    // Apply dark mode default styles
+    button.style.backgroundColor = 'white';
+    button.style.color = 'black';
+  } else {
+    // Apply light mode default styles
+    button.style.backgroundColor = '#404040';
+    button.style.color = 'white';
+  }
+}
+// Get the button2 element
+const button2 = document.getElementById("btnhero2");
+
+// Add an event listener to the button
+button2.addEventListener('mouseenter', handleMouseEnter2);
+button2.addEventListener('mouseleave', handleMouseLeave2);
+
+// Function to handle mouseenter event
+function handleMouseEnter2() {
+  // Check if dark mode is active
+  const body = document.body;
+  const isDarkMode = body.classList.contains("dark-mode");
+
+  if (isDarkMode) {
+    // Apply dark mode hover styles
+    button2.style.backgroundColor = '#404040';
+    button2.style.color = 'white';
+
+  } else {
+    // Apply default hover styles
+    button2.style.backgroundColor =  "rgb(236, 236, 236)";
+    button2.style.color = 'black';
+  }
+}
+
+// Function to handle mouseleave event
+function handleMouseLeave2() {
+  // Reset the button styles
+  const body = document.body;
+  const isDarkMode = body.classList.contains("dark-mode");
+
+  if (isDarkMode) {
+    // Apply dark mode default styles
+    button2.style.backgroundColor = 'white';
+    button2.style.color = 'black';
+  } else {
+    // Apply light mode default styles
+    button2.style.backgroundColor = '#404040';
+    button2.style.color = 'white';
+  }
+}
+// Function to check if dark mode is enabled
+function isDarkModeEnabled() {
+  return localStorage.getItem('darkMode') === 'true';
+}
+
+// Function to toggle dark mode
+function toggleDarkMode() {
+  const isDarkMode = isDarkModeEnabled();
+  
+  // Update dark mode state
+  if (isDarkMode) {
+    localStorage.setItem('darkMode', 'false');
+  } else {
+    localStorage.setItem('darkMode', 'true');
+  }
+}
+
+// Check if dark mode is enabled on page load
+window.addEventListener('DOMContentLoaded', function() {
+  const isDarkMode = isDarkModeEnabled();
+
+  if (isDarkMode) {
+    document.body.classList.add('dark-mode');
+  }
+});
     </script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['Web Developer', 'Designer', 'Freelancer','Web Developer'],
+        typeSpeed: 50,
+      });
+    </script>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>
 </html>
