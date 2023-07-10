@@ -38,7 +38,7 @@ window.location.href = mailtoLink;
     <nav class="navbar navbar-expand-lg " id="navjs">
         <div class="container-fluid" id="navText">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <span  id="menubtn"><i class="fa-regular fa-bars"></i></span>
+            <span  id="menubtn"><i class="fa-solid fa-ellipsis-vertical"></i></span>
           </button>
           <a class="navbar-brand myname fs-2 ms-3" href="#">Adee Shaikh</a>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
@@ -63,7 +63,7 @@ window.location.href = mailtoLink;
       <!-- Hero Section -->
 
     <div class="jumbotron d-flex jumbotron-fluid ">
-     <div class="darkSec">
+       <div class="darkSec">
           <i  id="darkBtn" class="fa-solid fa-moon moon"></i>
         </div>
         <div class="container jumbo ">
@@ -406,31 +406,7 @@ function handleMouseLeave2() {
     button2.style.color = 'white';
   }
 }
-// Function to check if dark mode is enabled
-function isDarkModeEnabled() {
-  return localStorage.getItem('darkMode') === 'true';
-}
 
-// Function to toggle dark mode
-function toggleDarkMode() {
-  const isDarkMode = isDarkModeEnabled();
-  
-  // Update dark mode state
-  if (isDarkMode) {
-    localStorage.setItem('darkMode', 'false');
-  } else {
-    localStorage.setItem('darkMode', 'true');
-  }
-}
-
-// Check if dark mode is enabled on page load
-window.addEventListener('DOMContentLoaded', function() {
-  const isDarkMode = isDarkModeEnabled();
-
-  if (isDarkMode) {
-    document.body.classList.add('dark-mode');
-  }
-});
     </script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
